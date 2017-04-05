@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<style>
+	.test{
+		height:300px;
+		width:300px;
+		background:#44bcea;
+		margin: 100px;
+	}
+</style>
+<body>
+<div class="test">
+</div>
+</body>
+<script src="http://seventh77.com/view/publicjs/jquery-2.1.4.min.js"></script>
+<script src="js/widget/mahjong.js"></script>
+<script>
+	imahjong.init(1);
+	var x = imahjong.count({
+		cards:["222255558888","555588"],
+		pak:4
+	});
+	console.log(x);
+</script>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>麻将算番</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<div class="content">
+	<h1>麻将算番</h1>
+	<p class="tips">算番规则为四川麻将血战到底<br>目前只计算一次胡牌的番数<br>该版本为测试版，如计算错误，请反馈给作者，谢谢<br>作者：~柒柒</p>
+	<div class="box">
+		<label>花色一：<input type="text" id='a'></label>
+		<label>花色二：<input type="text" id='b'></label>
+		<label>碰和杠总和：<input type="text" id='pak'></label>
+		<label>单倍分数：<input type="text" id='point'></label>
+	</div>
+	<p class="tipsb">花色输入一种花色牌的所有数字，碰和杠总和输入一共有几个碰和杠,单倍分数输入底分<br>输入事例：花色一 “1111567” 花色二“11145677” 碰和杠总和“2”(一个碰，一个杠，总和是2) 单倍分数“1”<br>两种花色不能少于14张牌，同一花色同一张牌不能大于5张</p>
+	<div class="btn">计算</div>
+	<div class="result">
+		<table>
+			<tr>
+				<th>番种</th>
+				<th>番数</th>
+				<th>数量</th>
+				<th>总分数</th>
+			</tr>
+			<!-- <tr>
+				<td>清一色</td>
+				<td>2</td>
+				<td>1</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>大对子</td>
+				<td>1</td>
+				<td>1</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>总</td>
+				<td>3</td>
+				<td></td>
+				<td>8</td>
+			</tr> -->
+		</table>
+	</div>
+</div>
+<script src="js/widget/jquery.js"></script>
+<script src="js/widget/mahjong.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
